@@ -1,0 +1,169 @@
+<!doctype html><html lang="en"><head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Hidayat | {HOME/PAGE}</title> 
+  <link rel="shortcut icon" href="https://i.ibb.co/7G4Q3kN/20191219-023849.png" type="image/x-icon"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+ <style type="text/css" id="dcoder_stylesheet">:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #82CAFF;
+    --heading-color: #292922;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin-top: 0em;
+  margin-left: 0em;
+  max-width: 40em;
+  font-family: monospace;
+  line-height: 1.5;
+}
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+h1 {
+  margin-bottom: 0px;
+  color: var(--secondary-color);
+}
+h3 {
+  font-size: 10px;
+}
+
+a {
+  color: #536390;
+  text-decoration: none;
+  background-color: white;  
+}
+a:hover{
+  color: black;
+}
+
+.theme-switch-wrapper {
+  margin-top: 0em;
+  /*margin-left: 2em;*/
+}
+em {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  font-size: 1rem;
+}
+.theme-switch {
+  height: 0px;
+  width: 0px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background:white;
+  border-bottom:5px solid #536390;
+  padding:0px 0px;
+  text-decoration:none;
+  width: 20px;
+  height: 40px;
+}
+.slider:before {
+  background:white;
+  border-bottom:5px solid #2A80B9;
+  padding:0px 0px;
+  text-decoration:none;
+  font-family:sans-serif;
+  width: 0px;
+  height: 0px;
+}
+
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:checked + .slider:before {
+  transform: translateX(0px);
+}
+
+.slider.round {
+  border-radius: 0px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+.act-btn{
+            background:#2A80B9;
+            display: block;
+            width: 15px;
+            height: 40px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 10s;
+            position: fixed;
+            right: 10px;
+            bottom:30px;
+        }
+.act-btn:hover{background: #2A80B9}
+
+
+</style></head> 
+ <body>
+  <b>
+    <a href="../../index.html">
+    <font color="black" face="monospace">&gt;&gt;&nbsp;</font>HOME | </a> 
+      <a href="index.html">TOOLS | </a> 
+        <a href="../gallery">GALLERY | </a> 
+          <a href="../source-code/source.xml">SOURCE | </a> 
+            <a href="../contact">CONTACT&nbsp;</a></b> 
+
+
+    <div class="theme-switch-wrapper">
+   <label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox">
+    <div class="slider round"></div> </label> 
+  </div> 
+    <center>
+ <img width="150" height="150" src="https://i.ibb.co/7G4Q3kN/20191219-023849.png"> 
+   <h2>Coming Soon;</h2> 
+  </center> 
+ 
+    <br><center>
+     <h4>Copyright (c) Hidayat@KeyWord</h4> 
+    </center> 
+   </div> 
+ 
+</div><script type="text/javascript" id="dcoder_script">window.console = window.console || function(t) {};
+if (document.location.search.match(/type=embed/gi)) {
+  window.parent.postMessage("resize", "*");
+}
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}</script></body></html>
